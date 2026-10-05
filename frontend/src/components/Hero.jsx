@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Trophy, ArrowRight, ShieldCheck, Zap, Users, GraduationCap } from 'lucide-react';
+import { Sparkles, Trophy, ArrowRight, ShieldCheck, Zap, Users, GraduationCap, Compass } from 'lucide-react';
 
 export default function Hero({ onStartQuiz, onExploreLeaderboard, metrics }) {
   const totalReg = metrics?.total_registrations || 148;
@@ -36,9 +36,21 @@ export default function Hero({ onStartQuiz, onExploreLeaderboard, metrics }) {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+        <p className="mt-5 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
           Join the <strong className="text-white font-semibold">NxtWave AI Ready Campus Challenge</strong>. Take the 30-second AI Readiness Test, build your first working AI project in 60 minutes, and help your campus reach <span className="text-amber-400 font-bold">#1</span>.
         </p>
+
+        {/* 0-to-1 Engineering Philosophy Highlight Card */}
+        <div className="mt-6 max-w-xl mx-auto p-4 rounded-2xl bg-gradient-to-r from-blue-950/70 via-slate-900/90 to-indigo-950/70 border border-cyan-500/40 shadow-xl shadow-cyan-950/20 backdrop-blur-md">
+          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-bold text-slate-200">
+            <span className="text-amber-400 px-2 py-0.5 rounded-md bg-amber-400/10 border border-amber-400/20">0 → 1 is the hardest leap</span>
+            <span className="text-slate-500">•</span>
+            <span className="text-cyan-300 px-2 py-0.5 rounded-md bg-cyan-400/10 border border-cyan-400/20">1 → 100 is momentum</span>
+          </div>
+          <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+            Most students get overwhelmed thinking about advanced AI models. But your <strong className="text-white">0th step</strong> is simply building your first working project. <span className="text-cyan-300 font-semibold">Take that 0-to-1 step with us today.</span>
+          </p>
+        </div>
 
         {/* CTAs */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -47,7 +59,7 @@ export default function Hero({ onStartQuiz, onExploreLeaderboard, metrics }) {
             className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white shadow-xl shadow-blue-600/30 hover:shadow-cyan-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
           >
             <Sparkles className="w-5 h-5 text-cyan-200" />
-            <span>Check My AI Readiness</span>
+            <span>Take Your 0th Step — Check AI Readiness</span>
             <ArrowRight className="w-5 h-5" />
           </button>
 
@@ -103,7 +115,7 @@ export default function Hero({ onStartQuiz, onExploreLeaderboard, metrics }) {
 
             <div className="col-span-2 sm:col-span-1 bg-slate-950/60 rounded-xl p-3 border border-slate-800/60">
               <p className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Workshop Format</p>
-              <p className="text-sm font-bold text-emerald-400 mt-0.5">100% Free • Live Build</p>
+              <p className="text-sm font-bold text-emerald-400 mt-0.5">100% Free • Live 0-to-1 Build</p>
             </div>
           </div>
 

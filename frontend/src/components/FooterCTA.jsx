@@ -11,11 +11,15 @@ export default function FooterCTA({ onStartQuiz, onExploreLeaderboard }) {
           <div className="absolute -top-24 -left-24 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute -bottom-24 -right-24 w-60 h-60 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
-          <h2 className="text-3xl sm:text-4xl font-black text-white max-w-2xl mx-auto">
-            Ready to make your college #1?
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 text-xs font-bold mb-4">
+            🚀 0 → 1 is the hardest part. 1 → 100 is momentum.
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl font-black text-white max-w-2xl mx-auto leading-tight">
+            Start your 0th step with us. Grow to 100.
           </h2>
           <p className="mt-4 text-base text-slate-300 max-w-xl mx-auto">
-            Take the 30-second AI Readiness Test, reserve your free workshop seat, and help your campus dominate the national leaderboard.
+            Take the 30-second AI Readiness Test, build your first working AI project in 60 minutes, and help your college reach #1.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -138,6 +138,16 @@ export default function QuizModal({ isOpen, onClose, onCompleteQuiz }) {
               {quizResult.message}
             </p>
 
+            {/* 0 to 1 Encouragement Card */}
+            <div className="mt-4 p-3.5 rounded-2xl bg-gradient-to-r from-blue-950/70 via-indigo-950/80 to-slate-950 border border-cyan-500/30 text-left max-w-md mx-auto">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-amber-300">
+                <span>🚀 The 0-to-1 Law:</span>
+              </div>
+              <p className="text-[12px] text-slate-200 mt-1 leading-snug">
+                <strong>0 to 1 is the hardest part. 1 to 100 is momentum.</strong> Start your 0th step with us in the 60-minute workshop, and watch your skills multiply!
+              </p>
+            </div>
+
             <div className="mt-3 text-[11px] text-slate-400 flex items-center justify-center gap-1">
               <AlertCircle className="w-3.5 h-3.5" />
               <span>This is a quick self-assessment, not an academic exam.</span>

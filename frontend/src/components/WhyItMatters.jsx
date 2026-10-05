@@ -1,33 +1,33 @@
 import React from 'react';
-import { HelpCircle, CheckCircle2, UserPlus, Users2, Rocket, ArrowRight, Share2, Award, Sparkles } from 'lucide-react';
+import { HelpCircle, CheckCircle2, UserPlus, Users2, Rocket, ArrowRight, Share2, Award, Sparkles, Compass } from 'lucide-react';
 
 export default function WhyItMatters({ onStartQuiz }) {
   const steps = [
     {
       num: "01",
-      title: "Test",
-      desc: "Take the 30-second AI Readiness Test and discover your score tier.",
+      title: "Test (0th Step)",
+      desc: "Take the 30-second AI Readiness Test and discover your benchmark tier.",
       icon: HelpCircle,
       accent: "from-blue-500 to-indigo-500"
     },
     {
       num: "02",
-      title: "Register",
-      desc: "Reserve your seat for the free 'Build Your First AI Project in 60 Minutes' workshop.",
+      title: "Register (Free)",
+      desc: "Reserve your seat for 'Build Your First AI Project in 60 Minutes'—zero fees.",
       icon: CheckCircle2,
       accent: "from-indigo-500 to-purple-500"
     },
     {
       num: "03",
       title: "Challenge",
-      desc: "Get your campus referral link. Invite batchmates to climb the live college leaderboard.",
+      desc: "Get your campus code. Invite classmates to propel your college to #1.",
       icon: Users2,
       accent: "from-purple-500 to-cyan-500"
     },
     {
       num: "04",
-      title: "Build",
-      desc: "Build and deploy your first working AI project in 60 minutes—hands-on.",
+      title: "Build (1 to 100)",
+      desc: "Complete your 0-to-1 build in 60 minutes. From 1 to 100, momentum takes over.",
       icon: Rocket,
       accent: "from-cyan-500 to-emerald-500"
     }
@@ -48,8 +48,26 @@ export default function WhyItMatters({ onStartQuiz }) {
           </p>
         </div>
 
+        {/* 0 to 1 Law Banner */}
+        <div className="mt-12 bg-gradient-to-r from-blue-950/60 via-indigo-950/70 to-slate-950/80 rounded-3xl p-6 sm:p-8 border border-indigo-500/30 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 text-xs font-bold mb-3">
+              ⚡ The 0-to-1 Principle of Engineering Growth
+            </span>
+            <h4 className="text-xl sm:text-2xl font-black text-white">
+              "Going from 0 to 1 is the hardest step. Going from 1 to 100 is momentum."
+            </h4>
+            <p className="mt-3 text-sm text-slate-300 leading-relaxed">
+              90% of engineers delay starting with AI because tutorials feel abstract or intimidating. 
+              The secret? <strong className="text-cyan-300">Just take your 0th step.</strong> In 60 minutes, you will build and launch your first working AI project hands-on. Once you break the barrier from 0 to 1, climbing from 1 to 100 becomes natural and effortless.
+            </p>
+          </div>
+        </div>
+
         {/* 4-Step Process */}
-        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, idx) => {
             const Icon = step.icon;
             return (
@@ -68,15 +86,15 @@ export default function WhyItMatters({ onStartQuiz }) {
                   </div>
                 </div>
 
-                <h4 className="text-xl font-bold text-white mb-2">{step.title}</h4>
-                <p className="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
+                <h4 className="text-lg font-bold text-white mb-2">{step.title}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed">{step.desc}</p>
               </div>
             );
           })}
         </div>
 
         {/* Growth Loop Visual Banner */}
-        <div className="mt-14 bg-gradient-to-r from-blue-950/40 via-indigo-950/40 to-slate-950/60 rounded-2xl p-6 sm:p-8 border border-blue-900/40">
+        <div className="mt-12 bg-gradient-to-r from-blue-950/40 via-indigo-950/40 to-slate-950/60 rounded-2xl p-6 sm:p-8 border border-blue-900/40">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="text-left max-w-xl">
               <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-blue-500/10 text-cyan-300 text-xs font-semibold mb-2">
@@ -94,7 +112,7 @@ export default function WhyItMatters({ onStartQuiz }) {
             {/* Loop Steps */}
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
               <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200">
-                1. Take Quiz
+                1. 0th Step: Quiz
               </span>
               <ArrowRight className="w-4 h-4 text-slate-600 hidden sm:block" />
               <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200">

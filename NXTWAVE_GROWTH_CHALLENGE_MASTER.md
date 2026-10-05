@@ -263,15 +263,21 @@ This allows high-density boutique engineering colleges to win the top spot throu
 
 ## 16. Analytics & Metrics Implemented
 
-The platform computes and exposes the following live metrics:
-* **Total Registrations & Qualified Registrations**
-* **7-Day Goal Progress Percentage** ($N / 500$)
-* **Viral Coefficient ($K$)** ($\text{Total Referrals} / \text{Total Registrations}$)
-* **Blended Cost Per Acquisition Estimate** ($₹2000 / N$)
-* **Average AI Readiness Score**
-* **Branch Distribution & Non-CSE Share %**
+> **[IMPORTANT EVALUATION NOTE: DATA DISTINCTION]**  
+> To ensure complete transparency and academic integrity, the platform maintains three distinct tiers of data:  
+> 1. **Live Prototype Demo Data:** Pre-seeded in the local SQLite database (~150 sample registrations across 12 colleges) solely to demonstrate that the live leaderboard, duplicate prevention, and referral counters update dynamically.  
+> 2. **Hypothetical 7-Day Campaign Model:** The assumption-based math model (§18) projecting how 500 students would be acquired in the real world across 7 days on ₹2,000.  
+> 3. **Growth Test Hypotheses:** Proposed A/B experiments (§20) with target benchmarks (e.g. $>40\%$ conversion lift), which are hypotheses to be tested, NOT claimed historical results.
+
+### Metrics Computed Live in the Prototype Engine:
+* **Total Registrations & Qualified Registrations** (e.g., 150 simulated registrations in demo mode)
+* **7-Day Goal Progress Percentage** ($150 / 500 = 30.0\%$)
+* **Viral Coefficient ($K$)** ($\text{Total Referrals} / \text{Total Registrations} = 106 / 150 = 0.71$)
+* **Simulated Cost Per Acquisition** ($₹2,000 / 150 = ₹13.33$; Target at 500 is $₹4.00$)
+* **Average AI Readiness Score** (Calculated dynamically across user quiz scores)
+* **Branch Distribution & Non-CSE Share %** (Tracked live across CSE, ECE, Mech, Civil, EEE)
 * **Score Tier Breakdown** (Getting Started, Exploring, Building, AI Ready)
-* **6-Stage Growth Funnel Step & Cumulative Conversion Rates**
+* **6-Stage Growth Funnel Step & Cumulative Conversion Rates** (Visitor $\to$ Quiz Start $\to$ Quiz Complete $\to$ Registered $\to$ Shared $\to$ Referral Signup)
 
 ---
 

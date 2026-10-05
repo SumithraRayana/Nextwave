@@ -79,13 +79,6 @@ export default function Navbar({ activeTab, setActiveTab, onStartQuiz, studentUs
 
         </div>
       </div>
-      
-      {/* Demo Data Banner */}
-      <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-950 border-t border-b border-indigo-500/20 py-1 text-center text-[11px] text-indigo-300 flex items-center justify-center gap-2 px-4">
-        <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-        <span className="font-bold text-indigo-200">DEMO ENVIRONMENT:</span>
-        <span>Simulating 7-Day Campus Growth Loop (Goal: 500 Registrations • Budget: ₹2,000)</span>
-      </div>
     </header>
   );
 }
